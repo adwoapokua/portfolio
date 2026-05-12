@@ -41,7 +41,7 @@ function Mobile() {
           <span className="text-xl font-semibold">Adwoa Pokua</span>
         </div>
         <DropdownMenu modal={false}>
-  <DropdownMenuTrigger><Button variant="ghost" className="text-primary"><Bars4Icon className="size-8"></Bars4Icon></Button></DropdownMenuTrigger>
+  <DropdownMenuTrigger><Button variant="ghost" className="text-primary"><Bars4Icon className="size-8 text-primary-foreground"></Bars4Icon></Button></DropdownMenuTrigger>
   <DropdownMenuContent className="mr-2">
     <DropdownMenuSeparator />
     <DropdownMenuItem>

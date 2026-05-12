@@ -20,7 +20,7 @@ export function Project() {
   ];
 
   return (
-   <section id="projects" className="h-screen scroll-mt-20 mt-300">
+   <section id="projects" className="h-screen scroll-mt-20 mt-150">
       <div className="hidden lg:block">
         <Desktop projects={projects}/>
       </div>

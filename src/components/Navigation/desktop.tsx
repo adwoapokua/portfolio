@@ -38,7 +38,7 @@ function Desktop() {
             links.map(({label, href}) =>
             {
               return (
-                <a href={href} className="text-secondary hover:text-primary-foreground hover:border-b-2 hover:border-secondary-foreground hover:pb-1 hover:text-bold text-sm">
+                <a href={href} className="text-secondary hover:text-primary-foreground hover:border-b-2 hover:border-secondary-foreground hover:pb-1 hover:text-bold">
                   {label}
                 </a>
               )

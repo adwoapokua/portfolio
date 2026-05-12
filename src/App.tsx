@@ -1,12 +1,11 @@
 import Header from "./components/Navigation/Header";
 import { NavLink } from "react-router";
-import { FaGithub, FaLinkedin, FaInstagram, FaArrowRight, FaArrowDown } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaArrowDown } from 'react-icons/fa';
 import { About } from "./components/About";
 import { Blog } from "./components/Blog";
 import { Contact  } from "./components/Contact";
 import { Project } from "./components/Projects";
 import { Button } from "./components/ui/button";
-import { Link } from "react-router";
 
 function App() {
   
@@ -48,16 +47,16 @@ function App() {
             </p>
  
             <div className="flex gap-3 mt-4 flex-wrap justify-center md:justify-start">
-              <Link to="#projects">
+              <a href="#projects">
                 <Button className="flex items-center gap-2">
                   See my projects <FaArrowDown />
                 </Button>
-              </Link>
-              <Link to="#blog">
+              </a>
+              <a href="#blog">
                 <Button variant="outline" className="flex items-center gap-2">
-                  Read my blog <FaArrowRight />
+                  Read my blog <FaArrowDown/>
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
  
