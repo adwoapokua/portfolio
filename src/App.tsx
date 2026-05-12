@@ -106,7 +106,7 @@ function App() {
       {/* section 5 */}
       <Contact/>
 
-      <footer className="border-t border-gray-300 shadow h-15 p-5 text-secondary">
+      <footer className="border-t border-gray-300 shadow h-15 p-5 text-secondary sm:mt-20">
         <div className="flex justify-between">
           <p>© 2025 Adwoa Aboagye. All rights reserved.</p>
         </div>
