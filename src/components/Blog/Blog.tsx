@@ -2,15 +2,14 @@ import Desktop from "./desktop";
 import Mobile from "./mobile";
 
 export function Blog() {
-
   return (
-   <section id="blog" className="h-screen scroll-mt-20">
+    <section id="blog" className="scroll-mt-20 py-16">
       <div className="hidden lg:block">
-        <Desktop/>
+        <Desktop />
       </div>
-      <div className="lg:hidden block mt-70">
-        <Mobile/>
+      <div className="lg:hidden">
+        <Mobile />
       </div>
-   </section>
+    </section>
   );
 }

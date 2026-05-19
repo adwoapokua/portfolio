@@ -42,7 +42,7 @@ export function About() {
 ];
 
   return (
-    <section id="about" className="h-screen scroll-mt-24">
+    <section id="about" className="scroll-mt-24 py-16">
       <div className="hidden lg:block">
         <Desktop skills={skills}/>
       </div>

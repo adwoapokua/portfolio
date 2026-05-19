@@ -7,7 +7,6 @@ function Mobile() {
   return (
     <div className="px-4 py-8">
 
-      {/* HEADER ROW */}
       <div className="flex items-center justify-between mb-2">
         <p className="text-2xl font-semibold text-black">Blog</p>
         <a href="./blogs" className="flex items-center gap-1.5 text-sm text-secondary">
@@ -15,23 +14,19 @@ function Mobile() {
         </a>
       </div>
 
-      {/* SUBHEADING */}
       <p className="text-sm text-secondary leading-relaxed mb-6">
         Thoughts, learnings, and insights from my journey in EdTech, Software
         Engineering and Machine Learning.
       </p>
 
-      {/* FEATURED BLOG CARD — stacked vertically */}
       <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
 
-        {/* IMAGE — top, full width, fixed height */}
         <img
           src="./blog1.jpg"
           alt="Featured blog"
           className="w-full h-48 object-cover"
         />
 
-        {/* CONTENT */}
         <div className="px-5 py-6 flex flex-col gap-2.5">
           <p className="text-xs text-primary-foreground">{featuredBlog.date}</p>
 

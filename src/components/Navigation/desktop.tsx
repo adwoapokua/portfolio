@@ -3,23 +3,23 @@ import { Button } from "../ui/button";
 const links = [
   {
     label: "Home",
-    href: "#home"
+    href: "/#home"
   },
   {
     label: "About",
-    href: "#about"
+    href: "/#about"
   },
   {
     label: "Projects",
-    href: "#projects"
+    href: "/#projects"
   },
   {
     label: "Blog",
-    href: "#blog"
+    href: "/#blog"
   },
   {
     label: "Contact",
-    href: "#contact"
+    href: "/#contact"
   }
 ]
 

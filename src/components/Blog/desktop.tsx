@@ -1,5 +1,6 @@
 import { FaArrowRight } from "react-icons/fa";
 import { blogs } from "./blogs";
+import { Link } from "react-router";
 
 const featuredBlog = blogs[0];
 
@@ -16,10 +17,10 @@ function Desktop() {
           <div className="py-25 px-10 flex flex-col gap-3 w-280">
             <p className="text-primary-foreground">{featuredBlog.date}</p>
             <p className="text-4xl font-bold">{featuredBlog.title}</p>
-            <p className="text-sm text-secondary">{featuredBlog.content.substring(0, 250)}</p>
-            <a href="./" className="text-primary-foreground flex gap-2 text-sm">Read more <FaArrowRight className="mt-1 size-3"></FaArrowRight></a>
-          </div>
-      </div>
+            <p className="text-sm text-secondary">{featuredBlog.content.substring(0, 250)}...</p>
+            <Link to={`/blogs/${featuredBlog.title}`} className="text-primary-foreground flex items-center gap-2 text-sm mt-2" > Read more <FaArrowRight className="size-3" /> </Link>
+            </div>
+        </div>
     </div>
   )
 }
