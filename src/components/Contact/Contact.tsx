@@ -3,7 +3,7 @@ import Mobile from "./mobile";
 
 export function Contact() {
   return (
-    <section id="contact" className="lg:min-h-screen scroll-mt-20 flex flex-col md:mx-30 md:mt-30 md:mb-50">
+    <section id="contact" className="lg:min-h-screen scroll-mt-20 flex flex-col md:mx-30 md:mt-30 md:mb-50 snap-start">
         <div className="hidden lg:block">
         <Desktop/>
       </div>

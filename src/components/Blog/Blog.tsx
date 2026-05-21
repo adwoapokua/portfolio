@@ -3,7 +3,7 @@ import Mobile from "./mobile";
 
 export function Blog() {
   return (
-    <section id="blog" className="scroll-mt-20 py-6 lg:min-h-screen">
+    <section id="blog" className="scroll-mt-20 py-6 lg:min-h-screen snap-start">
       <div className="hidden lg:block">
         <Desktop />
       </div>

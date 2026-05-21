@@ -30,7 +30,7 @@ export function About() {
 
 
   return (
-    <section id="about" className="scroll-mt-24 py-6 lg:min-h-screen">
+    <section id="about" className="scroll-mt-24 py-6 lg:min-h-screen snap-start">
       <div className="hidden lg:block">
         <Desktop skills={skills}/>
       </div>

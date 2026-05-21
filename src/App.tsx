@@ -12,7 +12,7 @@ function App() {
   return (
     <>
     <Header />
-    <div className="bg-accent overflow-hidden">
+    <div className="bg-accent overflow-hidden snap-y snap-mandatory overflow-y-scroll">
 
       {/* section 1 */}
        <section
@@ -30,7 +30,6 @@ function App() {
         md:flex-row md:justify-between md:gap-20
       ">
  
-        {/* TEXT CONTENT */}
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
  
           <div className="flex flex-col gap-3">
@@ -60,8 +59,7 @@ function App() {
               </a>
             </div>
           </div>
- 
-          {/* SOCIAL LINKS */}
+          
           <div className="flex gap-6 mt-8">
             <NavLink to="https://github.com/Adwoa-p">
               <FaGithub size="28" className="text-secondary-foreground hover:text-primary-foreground transition-colors" />
@@ -75,7 +73,6 @@ function App() {
           </div>
         </div>
  
-        {/* PROFILE IMAGE */}
         <div className="shrink-0">
           <div className="border-2 border-dashed border-primary-foreground rounded-full p-3 md:p-5">
             <img
