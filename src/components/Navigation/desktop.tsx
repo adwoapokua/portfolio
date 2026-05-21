@@ -29,7 +29,7 @@ function Desktop() {
     <>
       <div className="flex justify-between p-4">
         <div className="flex gap-4 items-center">
-          <div className="w-8 h-8 text-primary-foreground border-2 border-primary-foreground rounded-4xl grid place-content-center font-bold">AP</div>
+          <a href="/#home"><div className="w-8 h-8 text-primary-foreground border-2 border-primary-foreground rounded-4xl grid place-content-center font-bold">AP</div></a> 
           <span className="text-xl font-semibold">Adwoa Pokua</span>
         </div>
         <div className="flex items-center">

@@ -20,7 +20,7 @@ export function Project() {
   ];
 
   return (
-    <section id="projects" className="scroll-mt-20 py-16">
+    <section id="projects" className="scroll-mt-20 py-6 lg:min-h-screen">
       <div className="hidden lg:block">
         <Desktop projects={projects} />
       </div>

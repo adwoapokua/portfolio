@@ -1,16 +1,11 @@
-import { Card, CardContent } from "../ui/card";
+import type { IconType } from "react-icons/lib";
 
-type skill = {
-  title: string;
-  category: string;
-  description: string;
+type Props = {
+  skills: IconType[];
 };
 
-type props = {
-  skills: skill[];
-};
 
-function Desktop({skills}:props) {
+function Desktop({skills}:Props) {
   return (
     <div className="flex flex-col">
       <div className="flex gap-50 mx-30">
@@ -80,37 +75,40 @@ function Desktop({skills}:props) {
       </div>
       <div className="mx-30 flex flex-col gap-5 mt-10">
         <p className="text-primary-foreground text-lg">TOOLKIT</p>
-        <p className="text-4xl">Technical Skills</p>
-        <div className="grid grid-cols-3 gap-5 w-300">
-          {skills.map((skill, index) => (
-        <Card
-          key={index}
-          className="rounded-2xl border bg-white shadow-sm"
-        >
-          <CardContent className="p-4 space-y-2">
-            <div className="flex items-center justify-between">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary-foreground">
-                <span className="text-white font-bold">{`</>`}</span>
+            <div className="relative flex overflow-hidden py-4 gap-10 mx-10">
+              <div className="flex shrink-0 animate-marquee gap-10 min-w-max items-center">
+                {skills.map((icon, index) => {
+                  const Icon = icon;
+
+                  return (
+                    <div
+                      key={index}
+                      className="flex items-center gap-2 whitespace-nowrap text-secondary-foreground"
+                    >
+                      <Icon size={40} />
+                    </div>
+                  );
+                })}
               </div>
+              <div
+                aria-hidden="true"
+                className="flex shrink-0 animate-marquee gap-10 min-w-max items-center"
+              >
+                {skills.map((icon, index) => {
+                  const Icon = icon;
 
-              <span className="rounded-full bg-primary-foreground px-3 py-1 text-xs font-medium text-white">
-                {skill.category}
-              </span>
+                  return (
+                    <div
+                      key={`duplicate-${index}`}
+                      className="flex items-center gap-2 whitespace-nowrap text-secondary-foreground"
+                    >
+                      <Icon size={40} />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
-
-            <div className="space-y-2">
-              <h3 className="text-xl font-semibold text-gray-900">
-                {skill.title}
-              </h3>
-
-              <p className="text-sm leading-relaxed text-gray-600">
-                {skill.description}
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-      ))}
-        </div>
+            
       </div>
     </div>
   )

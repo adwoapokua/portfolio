@@ -22,6 +22,7 @@ function App() {
         px-4 py-16
         md:px-10 md:py-0
         lg:mx-30
+        lg:min-h-screen
       "
     >
       <div className="

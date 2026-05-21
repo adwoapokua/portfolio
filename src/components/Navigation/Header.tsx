@@ -3,7 +3,7 @@ import Mobile from "./mobile";
 
 function Header() {
   return (
-    <header className="sticky top-0 bg-accent shadow-sm opacity-95 backdrop-blur-4xl">
+    <header className="sticky top-0 bg-accent shadow-sm opacity-95 backdrop-blur-4xl z-50 ">
       <div className="hidden lg:block">
         <Desktop />
       </div>

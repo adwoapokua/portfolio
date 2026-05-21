@@ -8,6 +8,19 @@
   --font-serif: "Playfair Display", serif;
 }
 
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
